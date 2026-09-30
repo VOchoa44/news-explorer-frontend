@@ -1,0 +1,26 @@
+.modal_type_registration-success {
+  display: flex;
+}
+
+.modal_type_registration-success .modal__content {
+  position: relative;
+  padding-top: 43px;
+  height: 182px;
+  box-sizing: border-box;
+}
+
+.modal_type_registration-success .modal__title {
+  max-width: 315px;
+  width: 100%;
+  margin: 0 0 14px 0;
+}
+
+.modal_type_registration-success .modal__secondary-button {
+  display: block;
+  margin: 0;
+  font-size: 18px;
+}
+
+.modal_type_registration-success {
+  background: rgba(0, 0, 0, 0.5);
+}
