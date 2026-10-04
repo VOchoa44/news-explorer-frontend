@@ -79,11 +79,43 @@
   padding: 0 104px 0 104px;
 }
 
-/* Desktop 1030px+ */
-@media screen and (max-width: 1350px) and (min-width: 1030px) {
+.main__search-results-nothing-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 86px;
 }
 
-/* Tablet 769px - 1029px */
+.main__search-results-nothing-found-icon {
+  width: 86px;
+  height: 86px;
+}
+
+.main__search-results-message {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: center;
+  color: rgba(26, 27, 34, 1);
+
+  margin: 31.5px 0 0;
+}
+
+.main__search-results-nothing-found-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  color: rgba(108, 112, 122, 1);
+  margin: 16px 0 0;
+  max-width: 356px;
+  width: 100%;
+}
+
 @media screen and (max-width: 1029px) and (min-width: 551px) {
   .main__about {
     padding: 0 40px;
@@ -115,24 +147,10 @@
     font-size: 34px;
     line-height: 30px;
   }
+  .main__search-results-nothing-found {
+    padding-top: 40px;
+  }
 }
-
-/* Tablet: 446px–768px */
-/* @media screen and (max-width: 768px) and (min-width: 551px) {
-  .main__search-results-content {
-    padding: 0 40px 40px 40px;
-  }
-
-  .main__search-results-title {
-    padding: 40px 0 32px 40px;
-  }
-
-  .main__search-results-button {
-    margin-top: 32px;
-    width: 240px;
-    padding: 16px 74px 16px 75px;
-  }
-} */
 
 @media screen and (max-width: 551px) {
   .main__search {
@@ -171,5 +189,9 @@
 
   .main__about {
     padding: 0 16px;
+  }
+
+  .main__search-results-nothing-found {
+    padding-top: 24px;
   }
 }

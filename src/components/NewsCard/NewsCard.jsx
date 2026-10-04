@@ -18,11 +18,29 @@ function NewsCard({
   return (
     <li className="news-card">
       {article.query && <p className="news-card__keyword">{article.query}</p>}
-      <img
-        className="news-card__image"
-        src={article.urlToImage || noImage}
-        alt={article.title}
-      />
+      <a
+        className="news-card__link"
+        href={article.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          className="news-card__image"
+          src={article.urlToImage || noImage}
+          alt={article.title}
+        />
+
+        <p className="news-card__date">
+          {new Date(article.publishedAt).toLocaleDateString("en-Us", {
+            month: "long",
+            day: "numeric",
+            year: "numeric",
+          })}
+        </p>
+        <span className="news-card__title">{article.title}</span>
+        <p className="news-card__text">{article.description}</p>
+        <p className="news-card__source">{article.source.name}</p>
+      </a>
       <div className="news-card__bookmark-container">
         <button
           type="button"
@@ -58,7 +76,7 @@ function NewsCard({
           {!isSaved && (
             <img
               src={isSavedNews ? trashHover : bookmarkHover}
-              alt=""
+              alt="bookmark icon"
               className="news-card__bookmark-hover-image"
             />
           )}
@@ -75,23 +93,6 @@ function NewsCard({
           )
         )}
       </div>
-      <p className="news-card__date">
-        {new Date(article.publishedAt).toLocaleDateString("en-Us", {
-          month: "long",
-          day: "numeric",
-          year: "numeric",
-        })}
-      </p>
-      <a
-        className="news-card__title"
-        href={article.url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {article.title}
-      </a>
-      <p className="news-card__text">{article.description}</p>
-      <p className="news-card__source">{article.source.name}</p>
     </li>
   );
 }

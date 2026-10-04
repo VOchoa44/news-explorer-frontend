@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal_opened {
@@ -65,12 +66,16 @@
   width: 100%;
   box-sizing: border-box;
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 8px 0;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 1.2;
   outline: none;
+}
+
+.modal__input:focus {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
 .modal__input::placeholder {

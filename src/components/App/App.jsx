@@ -1,6 +1,7 @@
 // App.jsx
 import { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
@@ -56,7 +57,7 @@ function App() {
     setIsLoading(true);
 
     const initialArticles =
-      window.innerWidth <= 768 && window.innerWidth >= 449 ? 4 : 3;
+      window.innerWidth <= 729 && window.innerWidth >= 490 ? 4 : 3;
 
     setDisplayedArticles(initialArticles);
 
@@ -186,10 +187,12 @@ function App() {
         <Route
           path="/saved-news"
           element={
-            <SavedNews
-              savedArticles={savedArticles}
-              handleRemoveArticle={handleRemoveArticle}
-            />
+            <ProtectedRoute isLoggedIn={isLoggedIn}>
+              <SavedNews
+                savedArticles={savedArticles}
+                handleRemoveArticle={handleRemoveArticle}
+              />
+            </ProtectedRoute>
           }
         />
       </Routes>
