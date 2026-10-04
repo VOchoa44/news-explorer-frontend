@@ -1,0 +1,138 @@
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  padding: 80px 0 80px 0;
+}
+
+.about__profile-picture {
+  height: 464px;
+  width: 464px;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.about__icon {
+  position: absolute;
+  top: 170px;
+  left: 203px;
+}
+
+.about__placeholder-text {
+  position: absolute;
+  top: 248px;
+  left: 99px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+.about__span-accent {
+  display: block;
+}
+
+.about__text {
+  padding: 51px 0 0 0;
+}
+
+.about__title {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.about__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  max-width: 600px;
+  width: 100%;
+  margin: 24px 0 0 0;
+}
+
+@media screen and (max-width: 1029px) and (min-width: 446px) {
+  .about {
+    padding: 61px 0 61px 0;
+    gap: 32px;
+  }
+
+  .about__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .about__profile-picture {
+    width: 232px;
+    height: 232px;
+    padding-top: 19px;
+  }
+
+  .about__text {
+    padding: 0;
+  }
+
+  .about__icon {
+    position: absolute;
+    top: 67px;
+    left: 96px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .about__placeholder-text {
+    position: absolute;
+    top: 119px;
+    left: 23px;
+    font-size: 14px;
+    line-height: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 32px 0 0 0;
+    height: 752px;
+  }
+
+  .about__profile-picture {
+    width: 272px;
+    height: 272px;
+  }
+
+  .about__icon {
+    top: 69px;
+    left: 108px;
+  }
+
+  .about__placeholder-text {
+    top: 144px;
+    left: 30px;
+    font-size: 16px;
+  }
+
+  .about__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .about__text {
+    padding: 24px 0 0 0;
+  }
+
+  .about__description {
+    margin: 16px 0 0 0;
+  }
+}

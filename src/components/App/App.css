@@ -1,0 +1,33 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page__top {
+  background-image: url("../../images/background-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 576px;
+  flex-shrink: 0;
+}
+
+.page__top--saved-news {
+  background-image: none;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1029px) and (min-width: 551px) {
+  .page__top {
+    height: 400px;
+    background-size: auto 400px;
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .page__top {
+    background-size: auto 576px;
+    background-position: top center;
+  }
+}

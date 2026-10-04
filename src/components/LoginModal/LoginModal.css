@@ -1,0 +1,86 @@
+/* LoginModal.css */
+.login-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-modal__title {
+  margin: 0 0 22px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+  color: rgba(26, 27, 34, 1);
+}
+
+.login-modal__label {
+  margin-bottom: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: rgba(47, 113, 229, 1);
+}
+
+.login-modal__input {
+  display: block;
+  margin-bottom: 16px;
+  max-width: 358px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  color: rgba(26, 27, 34, 1);
+  opacity: 20%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.login-modal__input::placeholder {
+  color: rgba(26, 27, 34, 1);
+  opacity: 20%;
+}
+
+.modal__input-error {
+  display: block;
+  margin: 3px 0 0 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(255, 0, 0, 1);
+}
+
+.login-modal__submit {
+  margin: 23px 0 0 0;
+  padding: 20px 0 20px 0;
+  border-radius: 100px;
+  border: none;
+  background-color: rgba(230, 232, 235, 1);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.login-modal__signup {
+  margin: 16px 0 0;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.login-modal__signup-link {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  color: rgba(47, 113, 229, 1);
+}
